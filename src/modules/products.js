@@ -4,7 +4,7 @@ const loadProducts = function () {
     getProducts();
     function getProducts(){
         var database = firebase.database().ref().child("products");
-        database.once('value', (snap) => {
+        database.on('value', (snap) => {
             const products = JSON.parse(JSON.stringify(snap.val(),null,3));
             renderProducts(products);
           });
