@@ -1,0 +1,27 @@
+{
+  "name": "RestaurantPage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adjapeve/RestaurantPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adjapeve/RestaurantPage/issues"
+  },
+  "homepage": "https://github.com/adjapeve/RestaurantPage#readme",
+  "devDependencies": {
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "firebase": "^8.3.3"
+  }
+}
