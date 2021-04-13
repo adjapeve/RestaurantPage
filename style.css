@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+html { 
+    background: url("./IMG/background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Yatra One', cursive;
+    font-size: 1.3rem;
+    --purple:rgb(85, 99, 161);
+    --silver:rgb(201, 205, 223);
+}   
+body {
+    margin:0;
+}
+#content {
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+} 
+nav{
+    display: flex;
+    color:white;
+    font-size: 1.2rem;
+    height: 20vh;
+    border-bottom: 2px solid var(--silver);
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+li:hover {
+    border-bottom: 6px solid var(--purple);
+    padding-bottom: 4px;
+    cursor: pointer;
+  }
+main{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homeClass{
+    text-align: center;
+    color:white;
+}
+
+.whiteBackground{
+    height: 100%;
+    text-align: center;
+    background: rgba(255,255,255,0.9);
+    overflow-y: scroll;
+}
+hr{
+    width: 50vw;
+    border:2px solid var(--silver);
+}
+
+.welcomeHeader{
+    font-family: 'Yesteryear', cursive;
+    font-size: 5rem;
+    color: var(--silver);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.welcomeHeaderDarker{
+    font-family: 'Yesteryear', cursive;
+    font-size: 5rem;
+    color: var(--purple);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.name_price{
+    color:var(--purple);
+}
+.whiteH1{
+    color: white;
+    margin-top: -72px;
+    margin-bottom: 20px;
+    font-size: 4rem;
+}
+.blackH1{
+    color: black;
+    margin-top: -72px;
+    margin-bottom: 20px;
+    font-size: 4rem;
+}
+footer{
+    display: flex;
+    height: 10vh;
+    color:white;
+    font-size: 1.2rem;
+    border-top: 2px solid var(--silver);
+    justify-content: center;
+    align-items: center;
+}
+#products::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+#products::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+#products::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear,
+                     left bottom,
+                     left top,
+                     color-stop(0.44, rgb(132, 137, 158)),
+                     color-stop(0.72, rgb(111, 119, 158)),
+                     color-stop(0.86, var(--purple)));
+}
+
+@media (orientation: portrait) {
+    html{
+        font-size: 2.3rem;
+    }
+}
+@media screen and (min-width: 1600px) {
+    #content {
+        width:80vw;
+        margin: auto;
+    } 
+}
